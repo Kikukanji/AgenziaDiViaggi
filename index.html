@@ -6,56 +6,95 @@
     <title>Agenzia di Viaggi</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: Amble, sans-serif;
             text-align: center;
             background-image: url("sfondo.jpeg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
 
         header {
-            background-color: #f4a261;
             padding: 10px;
+        }
+
+        #titolo {
+            font-size: 48px;
+            font-weight: bold;
         }
 
         nav a {
             margin: 0 15px;
-            text-decoration: none;
-            color: white;
+            color: black;
             font-weight: bold;
+            font-size: 24px;
         }
 
         #aereo {
-            width: 300px;
-            height: 200px;
+            width: 400px;
+            border-radius: 0%;
         }
 
         .container {
             margin: 20px;
         }
 
+        #ScegliDestinazione {
+            text-align: left;
+            font-size: 24px;
+            margin-left: 30%;
+        }
+
         .destinazioni {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+        }
+
+            .destinazioni p {
+                font-size: 24px;
+                font-weight: bold;
+            }
+
+        #pMare {
+            color: aqua;
+        }
+
+        #pMontagna {
+            color: rebeccapurple;
+        }
+
+        #pDeserto {
+            color: gold;
+        }
+
+        .container img {
+            width: 200px;
+            border-radius: 50%;
+        }
+
+        .sconti {
             display: flex;
             justify-content: center;
             gap: 15px;
         }
 
-            .destinazioni img {
-                width: 200px;
-                height: 200px;
-                border-radius: 50%;
-            }
+        #imgsconti {
+            width: 300px;
+            border-radius: 0%;
+        }
 
         .footer {
             margin-top: 20px;
-            background-color: #2a9d8f;
             padding: 10px;
-            color: white;
+            text-align: right;
         }
     </style>
 </head>
 
 <body>
     <header>
-        <h1>Agenzia di viaggi</h1>
+        <h1 id="titolo">Agenzia di viaggi</h1>
         <nav>
             <a href="#">Home</a>
             <a href="#">Chi siamo</a>
@@ -64,27 +103,42 @@
     </header>
 
     <div class="container">
-        <h2>Scegli la tua destinazione</h2>
         <img id="aereo" src="aereo.jpg" alt="Aereo" title="Aereo" />
+        <h2 id="ScegliDestinazione"><strong><u><em>Scegli la tua destinazione</em></u></strong></h2>
         <div class="destinazioni">
             <div>
-                <p><strong>Mare</strong></p>
-                <img src="mare.jpg" alt="Mare" title="Mare" />
+                <p id="pMare"><strong>Mare</strong></p>
+                <img src="mare.jpg" alt="Mare" title="Mare" href="mare.html" />
             </div>
             <div>
-                <p><strong>Montagna</strong></p>
-                <img src="montagna.jpg" alt="Montagna" title="Montagna" />
+                <p id="pMontagna"><strong>Montagna</strong></p>
+                <img src="montagna.jpg" alt="Montagna" title="Montagna" href="montagna.html" />
             </div>
             <div>
-                <p><strong>Deserto</strong></p>
-                <img src="deserto.jpg" alt="Deserto" title="Deserto" />
+                <p id="pDeserto"><strong>Deserto</strong></p>
+                <img src="deserto.jpg" alt="Deserto" title="Deserto" href="deserto.html" />
             </div>
         </div>
     </div>
-
+    <br />
     <div class="container">
-        <p>Tante offerte a portata di click!</p>
-        <p>Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum</p>
+        <h2><strong>Tante offerte a portata di click!</strong></h2>
+        <div class="sconti">
+            <p>
+                <b>
+                    Lorem ipsum Lorem ipsumLorem<br />
+                    ipsumLorem ipsumLorem ipsumLorem<br />
+                    ipsumLorem ipsumLoremLorem ipsum<br />
+                    Lorem ipsumLorem ipsumLorem<br />
+                    ipsumLorem ipsumLorem ipsumLorem<br />
+                    ipsumLoremLorem ipsum Lorem<br />
+                    ipsumLorem ipsumLorem ipsumLorem<br />
+                    ipsumLorem ipsumLorem ipsumLorem<br />
+                    ipsumLorem ipsumLorem ipsumLorem<br />
+                </b>
+            </p>
+            <img id="imgsconti" src="sconti.jpg" alt="Sconti" title="Sconti" />
+        </div>
     </div>
 
     <footer class="footer">
