@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenzia di Viaggi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-image: url("sfondo.jpeg");
+        }
+
+        header {
+            background-color: #f4a261;
+            padding: 10px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        #aereo {
+            width: 300px;
+            height: 200px;
+        }
+
+        .container {
+            margin: 20px;
+        }
+
+        .destinazioni {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+            .destinazioni img {
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+            }
+
+        .footer {
+            margin-top: 20px;
+            background-color: #2a9d8f;
+            padding: 10px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Agenzia di viaggi</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Chi siamo</a>
+            <a href="#">Iscriviti</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Scegli la tua destinazione</h2>
+        <img id="aereo" src="aereo.jpg" alt="Aereo" title="Aereo" />
+        <div class="destinazioni">
+            <div>
+                <p><strong>Mare</strong></p>
+                <img src="mare.jpg" alt="Mare" title="Mare" />
+            </div>
+            <div>
+                <p><strong>Montagna</strong></p>
+                <img src="montagna.jpg" alt="Montagna" title="Montagna" />
+            </div>
+            <div>
+                <p><strong>Deserto</strong></p>
+                <img src="deserto.jpg" alt="Deserto" title="Deserto" />
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <p>Tante offerte a portata di click!</p>
+        <p>Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum</p>
+    </div>
+
+    <footer class="footer">
+        Agenzia di viaggi, Via Roma 47, Milano
+    </footer>
+</body>
+</html>
