@@ -23,58 +23,35 @@ nav a {
     font-size: 24px;
 }
 
-#aereo {
-    width: 400px;
-    border-radius: 0%;
-}
-
 .container {
     margin: 20px;
 }
 
-#ScegliDestinazione {
+.textleft {
     text-align: left;
+    font-weight: bold;
     font-size: 24px;
-    margin-left: 30%;
 }
 
 .destinazioni {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    flex-direction: row;
     gap: 25px;
+    font-size: 24px;
 }
 
-    .destinazioni p {
-        font-size: 24px;
-        font-weight: bold;
+    .destinazioni img {
+        width: 75%;
     }
 
-#pMare {
-    color: aqua;
-}
-
-#pMontagna {
-    color: rebeccapurple;
-}
-
-#pDeserto {
-    color: gold;
-}
-
-.container img {
-    width: 200px;
-    border-radius: 50%;
-}
-
-.sconti {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-#imgsconti {
-    width: 300px;
-    border-radius: 0%;
+.item {
+    width: calc(45% - 25px);
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
 }
 
 .footer {
