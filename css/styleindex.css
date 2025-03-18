@@ -107,7 +107,8 @@ nav a {
     height: 200px;
     object-fit: cover;
     border-radius: 50%;
-    transition: transform 0.3s, border-radius 0.3s, opacity 0.5s ease-in-out;
+    transition: transform 0.3s ease-in, transform 1s ease-out, border-radius 0.3s ease-in,
+                border-radius 0.3s ease-out, opacity 0.3s ease-in, opacity 1s ease-out;
 }
 
 .hover {
@@ -116,12 +117,14 @@ nav a {
 
 .image-wrapper:hover .hover {
     opacity: 1;
-    border-radius: 10%;
+    border-radius: 15%;
     transform: scale(1.1);
 }
 
 .image-wrapper:hover .default {
     opacity: 0;
+    border-radius: 15%;
+    transform: scale(1.1);
 }
 
 .sconti {
