@@ -59,3 +59,52 @@ nav a {
     padding: 10px;
     text-align: right;
 }
+
+
+
+
+
+/*css con aiuto */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.destinazioni .item {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+    /* Effetto progressivo: ogni destinazione appare con un ritardo crescente */
+    .destinazioni .item:nth-child(1) {
+        animation-delay: 0.2s;
+    }
+
+    .destinazioni .item:nth-child(2) {
+        animation-delay: 0.4s;
+    }
+
+    .destinazioni .item:nth-child(3) {
+        animation-delay: 0.6s;
+    }
+
+    .destinazioni .item:nth-child(4) {
+        animation-delay: 0.8s;
+    }
+
+    .destinazioni .item:nth-child(5) {
+        animation-delay: 1s;
+    }
+
+    .destinazioni .item:nth-child(6) {
+        animation-delay: 1.2s;
+    }
