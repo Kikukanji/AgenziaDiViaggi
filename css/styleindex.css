@@ -21,7 +21,13 @@ nav a {
     color: black;
     font-weight: bold;
     font-size: 24px;
+    transition: font-size 0.3s, color 0.3s;
 }
+
+    nav a:hover {
+        font-size: 28px;
+        color: red;
+    }
 
 #aereo {
     width: 400px;
@@ -53,7 +59,15 @@ nav a {
     color: aqua;
 }
 
+    #pMare a:visited {
+        color: aqua;
+    }
+
 #pMontagna {
+    color: rebeccapurple;
+}
+
+#pMontagna a:visited {
     color: rebeccapurple;
 }
 
@@ -61,9 +75,19 @@ nav a {
     color: gold;
 }
 
+#pDeserto a:visited {
+    color: gold;
+}
+
 .container img {
     width: 200px;
     border-radius: 50%;
+    transition: transform 0.3s, border-radius 0.3s;
+}
+
+.imgDestinazioni:hover {
+    transform: scale(1.1);
+    border-radius: 25%;
 }
 
 .sconti {

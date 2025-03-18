@@ -21,7 +21,13 @@ nav a {
     color: black;
     font-weight: bold;
     font-size: 24px;
+    transition: font-size 0.3s, color 0.3s;
 }
+
+    nav a:hover {
+        font-size: 28px;
+        color: red;
+    }
 
 .container {
     margin: 20px;
