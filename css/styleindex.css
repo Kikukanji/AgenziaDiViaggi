@@ -87,7 +87,7 @@ nav a {
 
 .imgDestinazioni:hover {
     transform: scale(1.1);
-    border-radius: 25%;
+    border-radius: 10%;
 }
 
 .sconti {
